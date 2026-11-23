@@ -30,3 +30,12 @@ jobs:
 
             - name: Wyświetl listę plików po checkout
               run: ls -a
+
+            - name: Setup Python
+              uses: actions/setup-python@v7.0.0
+              with:
+                # Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.
+                python-version: '3.14.8'
+        
+            - name: Sprawdzamy wersję Python po instalacji
+              run: python -V
