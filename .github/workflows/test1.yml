@@ -7,9 +7,10 @@ name: pierwszy_przeplyw
     # Triggers the workflow on push or pull request events but only for the "main" branch
 #    push:
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'    
+#on:
+#  schedule:
+#    - cron: '*/5 * * * *'  
+on:  
   workflow_dispatch:
     inputs:
       wybor_klienta:
